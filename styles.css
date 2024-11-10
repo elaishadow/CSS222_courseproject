@@ -1,0 +1,129 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    /* Align items towards the top */
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+    background-image: url('Screenshot%202024-08-29%20002619.png');
+    /* Ensure the image path is correct */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(15, 11, 11, 0.699);
+}
+
+/* Container to simulate paper shape */
+.container {
+    width: 60%;
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.562);
+    border: 1px solid #000;
+    padding: 20px;
+    position: relative;
+    box-sizing: border-box;
+    clip-path: polygon(0 0, 100% 0, 100% 95%, 98% 100%, 0 100%);
+    margin-top: 40px;
+}
+
+/* Navigation bar */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #3333336c;
+    padding: 5px 0;
+    border: 6px solid #000;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    /* Add space below the nav bar */
+    margin-right: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(224, 218, 218);
+    padding: 5px 20px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    text-align: center;
+    display: inline-block;
+}
+
+/* Outer box */
+.outer-box {
+    border: 2px solid #900;
+    padding: 20px;
+    display: block flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Title and paragraph styling */
+.outer-box-title {
+    margin: 10px 0;
+    color: #e0dada;
+    text-align: center;
+}
+
+.outer-box-paragraph {
+    color: #e0dada;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Inner box with form */
+.inner-box {
+    border: 2px solid #900;
+    padding: 20px;
+    width: 70%;
+}
+
+/* Form styling */
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    color: aliceblue;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"] {
+    padding: 8px;
+    border: 1px solid #000000;
+    width: 100%;
+    box-sizing: border-box;
+    height: 40px;
+    /* Set a uniform height */
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    background-color: #900;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #700;
+}
