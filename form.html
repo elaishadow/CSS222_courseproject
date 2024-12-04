@@ -4,40 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout Design</title>
+    <title>Indie Starter</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="box.css">
 </head>
 
 <body>
-    <div class="nav">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="form.html">Need Investment?</a>
-            <a href="help.html">Help Center</a>
-        </nav>
-    </div>
-    <div class="container">
-        <div class="outer-box">
-            <h2 class="outer-box-title">Project</h2>
-            <p class="outer-box-paragraph">More Information will come in a later date.</p>
-            <div class="inner-box">
-                <form>
-                    <div class="form-field">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name">
-                    </div>
-                    <div class="form-field">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email">
-                    </div>
-                    <div class="form-field">
-                        <label for="game-idea">Game Idea:</label>
-                        <input type="text" id="game-idea" name="game-idea">
-                    </div>
-                    <div class="form-field">
-                        <label for="invest-url">Invest URL:</label>
-                        <input type="url" id="invest-url" name="invest-url">
-                    </div>
-                    <button type="submit">Submit</button>
+    <nav class="navigation">
+        <div class="logo"><a href="index.html">Indie Starter</a></div>
+
+        <ul class="nav-links">
+            <li><a href="form.html">Need Investment?</a></li>
+            <li><a href="help.html">Help Center</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="updates.html">Updates</a></li>
+            <link rel="stylesheet" href="footer.css">
+        </ul>
+        <div class="hamburger">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+    <script src="nav.js"></script>
+    <section class="container">
+        <form class="form">
+            <div class="form-field">
+                <label for="name">Name of Project:</label>
+                <input type="text" required id="name" name="name" placeholder="Project"><br>
+            </div>
+            <div class="form-field">
+                <label for="email">Email:</label>
+                <input type="email" required id="email" name="email" placeholder="name@email.com"><br>
+            </div>
+            <div class="form-field">
+                <h4>As of December 2, 2024, Indie Starter does not have a way to get fund on this website, Developers
+                    will get the fund through external sources (e.g. Patreon).
+                    See <a href="updates.html">Updates</a> for more Information.</h4>
+                <label for="invest-url">Invest URL:</label>
+                <input type="url" required id="invest-url" name="invest-url"
+                    placeholder="e.g. Patreon, Vetme, Paypay, etc">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
 </body>
+<footer>
+    &copy; 2024 Indie Starter | <a href="https://www.paypal.com/paypalme/indiestarter" target="_blank">Donations</a>
+
+</footer>
+
 </html>

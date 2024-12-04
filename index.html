@@ -4,46 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IndieStarter</title>
+    <title>Indie Starter</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="box.css">
 </head>
 
 <body>
-    <div class="nav">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="form.html">Need Investment?</a>
-            <a href="help.html">Help Center</a>
-        </nav>
-    </div>
-    <div class="container">
-        <div class="outer-box">
-            <h2 class="outer-box-title">Project</h2>
-            <p class="outer-box-paragraph">More Information will come in a later date.</p>
-            <div class="inner-box">
-                <form>
-                    <div class="form-field">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name">
-                    </div>
-                    <div class="form-field">
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email">
-                    </div>
-                    <div class="form-field">
-                        <label for="game-idea">Game Idea:</label>
-                        <input type="text" id="game-idea" name="game-idea">
-                    </div>
-                    <div class="form-field">
-                        <label for="invest-url">Invest URL:</label>
-                        <input type="url" id="invest-url" name="invest-url">
-                    </div>
-                    <button type="submit">Submit</button>
-                </form>
-            </div>
+    <nav class="navigation">
+        <div class="logo"><a href="index.html">Indie Starter</a></div>
+
+        <ul class="nav-links">
+            <li><a href="form.html">Need Investment?</a></li>
+            <li><a href="help.html">Help Center</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="updates.html">Updates</a></li>
+            <link rel="stylesheet" href="footer.css">
+        </ul>
+        <div class="hamburger">
+            <span></span><span></span><span></span>
         </div>
-    </div>
+    </nav>
+    <script src="nav.js"></script>
+    <section class="container">
+        <h1>About us</h1>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Indie Starter is a croww funding specifically for Game Developers that
+            is new to Game Develop and wanted to try game developing.
+            We found that game development is at the high point of all programmers especially to the peeople who have
+            played video game nowadays and Indie Video games are getting more popular and polish, We at Indie Starter
+            are here to help achieve your dream on creating a polish and playable game.
+        </p>
+
+        <h2>Goals</h2>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We, IndieStarter, may be a crowd funding for Indie Video Game
+            Developers but our main goal
+            is to get you on your funds for the projecct you are working on and help your project be well marketed to
+            external crowdfunding website (e.g. Kickstarter, GoFundMe, Patreon, and etc.) and through social media
+        </p>
+    </section>
+    <section class="container">
+        <h3>
+            Need Investment? Fill Up our <a href="form.html">FORM</a>
+        </h3>
+    </section>
 
 </body>
+<footer>
+    &copy; 2024 Indie Starter |<a href="https://www.paypal.com/paypalme/indiestarter" target="_blank">Donations</a>
+
+</footer>
 
 </html>

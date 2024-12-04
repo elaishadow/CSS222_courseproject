@@ -1,0 +1,82 @@
+/* Container to simulate paper shape */
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto; /* Center with margin */
+    background: rgba(49, 48, 48, 0.863);
+    padding: 30px;
+    box-sizing: border-box;
+    border: 10px solid #000;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: #e0dada;
+    font-size: 1em;
+    line-height: 1.5;
+    flex: 1;
+}
+
+/* Outer box */
+.outer-box {
+    border: 20px solid #900;
+    padding: 30px;
+    display: block flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Title and paragraph styling */
+.outer-box-title {
+    margin: 0px 0;
+    color: #e0dada;
+    text-align: center;
+}
+
+.outer-box-paragraph {
+    color: #e0dada;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Inner box with form */
+.inner-box {
+    border: 2px solid #900;
+    padding: 20px;
+    width: 70%;
+}
+
+/* Form styling */
+.form-field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    color: aliceblue;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"] {
+    padding: 8px;
+    border: 1px solid #000000;
+    width: 100%;
+    box-sizing: border-box;
+    height: 40px;
+    /* Set a uniform height */
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    background-color: #900;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #700;
+}
